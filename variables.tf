@@ -19,7 +19,7 @@ variable "vpc_name" {
 }
 
 variable "provision" {
-  type        = boolean
+  type        = bool
   description = "Flag indicating that the load balancer should be provisioned"
   default     = true
 }
