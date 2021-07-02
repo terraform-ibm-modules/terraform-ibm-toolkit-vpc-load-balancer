@@ -3,34 +3,7 @@ name: ibm-vpc-load-balancer
 type: terraform
 description: Module to provision a load balancer
 tags:
-    - vpc
-    - load balancer
-    - network
-versions:
-- platforms: []
-  dependencies: []
-    - id: resource_group
-      refs:
-        - source: github.com/cloud-native-toolkit/terraform-ibm-resource-group
-          version: ">= 1.0.0"
-    - id: subnets
-      refs:
-        - source: github.com/cloud-native-toolkit/terraform-ibm-vpc-subnets
-          version: ">= 1.0.0"
-  variables: []
-    - name: resource_group_id
-      moduleRef:
-        id: resource_group
-        output: id
-    - name: region
-      scope: global
-    - name: ibmcloud_api_key
-      scope: global
-    - name: vpc_name
-      moduleRef:
-        id: subnets
-        output: vpc_name
-    - name: subnet_ids
-      moduleRef:
-        id: subnets
-        output: ids
+  - vpc
+  - load balancer
+  - network
+versions: {}
