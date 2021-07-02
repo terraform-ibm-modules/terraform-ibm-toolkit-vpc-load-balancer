@@ -1,5 +1,12 @@
-#output "myoutput" {
-#  description = "Description of my output"
-#  value       = "value"
-#  depends_on  = [<some resource>]
-#}
+
+output "id" {
+  value = data.ibm_is_lb.lb.id
+}
+
+output "hostname" {
+  value = data.ibm_is_lb.lb.hostname
+}
+
+output "type" {
+  value = data.ibm_is_lb.lb.type
+}
