@@ -7,7 +7,7 @@ tags:
     - network
 versions:
 - platforms: []
-  dependencies: []
+  dependencies:
     - id: resource_group
       refs:
         - source: github.com/cloud-native-toolkit/terraform-ibm-resource-group
@@ -16,7 +16,7 @@ versions:
       refs:
         - source: github.com/cloud-native-toolkit/terraform-ibm-vpc-subnets
           version: ">= 1.0.0"
-  variables: []
+  variables:
     - name: resource_group_id
       moduleRef:
         id: resource_group
