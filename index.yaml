@@ -1,4 +1,4 @@
-id: github.com/cloud-native-toolkit/terraform-ibm-vpc-load-balancer
+id: github.com/terraform-ibm-modules/terraform-ibm-toolkit-vpc-load-balancer
 name: ibm-vpc-load-balancer
 type: terraform
 description: Module to provision a load balancer
